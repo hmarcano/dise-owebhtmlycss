@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* SOMBRAS */
+.caja{
+    width: 300px;
+    height: 300px;
+    background: pink;
+
+    /* Valores que recibe box-shadow:
+        -el pimero es la distancia horizontal 
+        -el segundo es la distancia vertical 
+        -el tercer valor es la difuminacion
+        -el cuarto es el color 
+        -el quinto valor es inset, coloca la sombra en la parte de adentro*/
+     box-shadow: 30px 0 5px #000; /* Horizontal derecha*/
+     box-shadow: -30px 0 5px #000; /* Horizontal izquierda*/
+     box-shadow: 0 30px 5px #000; /* Vertical abajo*/
+     box-shadow: 0 -30px 5px #000; /* Vertical arriba*/
+     box-shadow: 20px 10px 15px #000; /* Horizontal Vertical*/
+}
+
+/* BORDES  */
+.caja{
+    width: 300px;
+    height: 300px;
+    background: cyan;
+
+    /* Valores que recibe border:
+        -El primer valor es el tamaño
+        -El segundo es el tipo de border 
+        -El tercero el color 
+
+        Existen los siguientes tipos de borde:
+        dotted, dashed, solid, double, groove, ridge, inset, outset  */
+    
+    border: 5px dotted plum;
+}
+
+/* COLOCAR LOS BORDES TIPO RADIOUS */
+.caja{
+    /* Partes que componen esta propiedad:
+    - Son 4 valores, cada uno representa las esquinas,
+        comenzando con la esquina superior izquierda
+    - o sino puedo colocar un solo valor y lo toman las 4 esquinas 
+    - Para hacer de un elemento un circulo colocamos, border-radius: 50%;*/
+    border-radius: 23px;
+    border-radius: 5px 2px 0px 10px;
+    border-radius: 50%;
+}
+
+img{
+    border-radius: 50%;
+    height: 300px;
+}

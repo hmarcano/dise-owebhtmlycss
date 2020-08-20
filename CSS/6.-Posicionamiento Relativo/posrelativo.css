@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* 
+PROPIEDADES PARA POSICIONAR
+    TOP: ARRIBA, SE POSICIONA DE ARRIBA HACIA ABAJO;
+    LEFT: IZQUIERDA, SE POSICIONA DE IZQUIERDA A DERECHA;
+    RIGHT: DERECHA, SE POSICIONA DE DERECHA A IZQUIERDA;
+    BOTTON: ABAJO, SE POSICIONA DE ABAJO HACIA ARRIBA; 
+*/
+
+.imgRelativa{
+    width: 200px;
+    height: 200px;
+    background: #000;
+    display: inline-block;
+    margin: 0;
+    position: relative;
+    /* top: 100px; */
+    left: 0;
+}
+
+.imgRelativa{
+    width: 200px;
+    height: 200px;
+    background: #000;
+    display: inline-block;
+    margin: 0;
+    position: relative;
+    /* top: 400px; */
+    left: 100px;
+}
+
+.imgRelativa{
+    width: 200px;
+    height: 200px;
+    background: #000;
+    display: inline-block;
+    margin: 0;
+    position: relative;
+    bottom: 100px;
+    left: 100px;
+}
+
+.imgNormal{
+    width: 200px;
+    height: 200px;
+    background: teal;
+    display: inline-block;
+    margin: 0;
+}
+
+    /* EL POSICIONAMIENTO RELATIVO SE MUEVE DESDE SU POSICION 
+    ORIGINAL, NO DESDE EL BORDE SUPERIOR IZQUIERDO. ESTE 
+    POSICIONAMIENTO NO AFECTA A LOS OTROS ELEMENTOS */

@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+/* PSEUDO-CLASES */
+/* Las pseudo-clases suelen hacer referencia al estado del elemento */
+
+    /* pseudo-clase :first-child 
+    La pseudo-clase :first-child hace referencia al primer elemento de un tipo contenido dentro de otro.
+    - Si el primer elemento no es del mismo tipo que estamos seteando en el css no se aplicara el first-child
+    - Si queremos que tome cualquier primer elemento solo se coloca:
+    */
+    
+    div :first-child{
+        color: red;
+    }
+
+   /*  div p:last-child{
+        color: rebeccapurple;
+    } */
+
+    div p:first-child{
+        color: rebeccapurple;
+    }
+
+    div :first-child{
+        color: red;
+    }
+
+    /* Las pseudo-clases de enlace :link y :visited */
+    /* La pseudo clase :link (o a:link) permite especificar el aspecto de los enlaces que todavía no han sido visitados.
+    La pseudo clase :visited (o a:visited) permite especificar el aspecto de los enlaces que sí han sido visitados. */
+
+    .activado:active{
+        color: lightseagreen;
+        background-color: purple;
+    }
+
+    a.link:link{
+        color: saddlebrown;
+    }
+
+    a.visitado:visited{
+        color: salmon;
+    }
+
+    /* PSEUDO CLASES Dinámicas :hover, :active y :focus */
+
+    /* -La pseudo-clase dinámica :hover
+    La pseudo-clase :hover permite especificar el aspecto del elemento sobre el que se encuentra el ratón. */
+    .caja{
+        width: 200px;
+        height: 200px;
+        background-color: springgreen;
+    }
+
+    .caja:hover{
+        background-image: url(rick3.jpg);
+        color: wheat;
+    }
+
+    /* La pseudo-clase dinámica :active:active
+    La pseudo-clase :active permite especificar el aspecto de un elemento cuando se hace clic sobre él (y mientras se mantiene el botón del ratón apretado). */
+    
+    .caja2{
+        width: 200px;
+        height: 200px;
+        background-color: lightpink;
+    }
+
+    .caja2:active{
+        background-image: url(rick3.jpg);
+    }
+
+    /* La pseudo-clase dinámica :focus:focus
+    La pseudo-clase :focus permite especificar el aspecto de un elemento cuando este tiene el foco. */
+
+    input:focus {
+        border: red 2px dotted;
+        padding: 2px;
+      }
+
+/* PSEUDO-ELEMENTOS */
+/* los pseudo-elementos suelen hacer referencia a determinadas partes de un elemento */
+
+    /*El pseudo-elemento ::first-letter::first-letter
+    El pseudo-elemento ::first-letter permite especificar el aspecto de la primera letra de texto. */
+    .letra::first-letter{
+        background-color: pink;
+        color: red;
+        float: left;
+        font-family: monospace;
+        font-size: 400%;
+    }
+
+    /* El pseudo-elemento ::first-line::first-line
+    El pseudo-elemento ::first-line permite especificar el aspecto de la primera línea de texto. */
+    .linea::first-line{
+        text-transform: uppercase;
+    }

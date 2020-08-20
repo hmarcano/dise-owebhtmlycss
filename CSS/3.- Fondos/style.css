@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*5 PROPIEDADES DE CSS QUE PERMITEN CAMBIAR EL BACKGROUND DE LOS ELEMENTOS
+    Background-color
+    Background-image
+    Background-repeat
+    Background-attachment
+    Background-position
+    Background-size
+*/
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: cyan;
+
+    
+}
+
+/* Background-image 
+        MUESTRA LA WEB CON UNA IMAGEN DE FONDO*/
+body{
+    background-image: url("fondo.jpg");
+}
+
+/* Background-repeat 
+        INDICA SI QUIERES O NO QUE SE REPITA LA IMAGEN:
+            REPEAT: REPITE EL FONDO HORIZONTAL Y VERTICAL
+            REPEAT-X: REPITE EL FONDO HORIZONTALMENTE
+            REPEAT-Y: REPITE EL FONDO VERTICALMENTE
+            NO-REPEAT: NO REPITE FONDO
+*/
+body{
+    background-repeat: no-repeat;
+/*     background-repeat: repeat;
+    background-repeat: repeat-y;
+    background-repeat: repeat-x; */
+}
+
+/*Background-position
+    POSICION EN LA QUE SE ENCUENTRA EL FONDO CON PORCENTAJE,
+    EL PUNTO SUPERIOR IZQUIERDO ES EL 0,0 UNIDADES DE MEDIDA
+        LEFT: POSICIONA IMAGEN A LA IZQUIERDA= 0;
+        RIGHT: POSICIONA IMAGN AL ADERECHA = 100%;
+        CENTER: 50%;
+        TOP: 0;
+        BOTTOM: 100%;*/
+body{
+    background-position: center;
+/*     background-position: left top;
+    background-position: right top; 
+    background-position: center top;
+    background-position: 100% top;*/
+}
+
+/* Background-size
+        MODIFICA EL TAMAÑO DEL FONDO DE LA IMAGEN
+            COVER
+            AUTO */
+body{
+    background-size: auto;
+    /* background-size: fixed;
+    background-size: cover;
+    background-size: 300px 400px;
+    background-size: 100%; */
+}
+
+/* Background-attachment
+       PERMITE MOSTRAR UNA IMAGEN FIJA EN LA PANTALLA 
+            SIRVE CUANDO HAY SCROLL LA IMAGEN NO SE MUEVE*/
+body{
+    background-attachment: fixed;
+}
+
+/*
+    ##  TAMBIEN SE PUEDEN UNIR VARIAS PROPIEDADES
+*/
+body{
+    background-image: url("fondo.jpg") repeat centar;
+}

@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.padre{
+    height: 1000px;
+    width: 1000px;
+    position: relative;
+}
+
+.imgAbsoluta{
+    width: 200px;
+    height: 200px;
+    background: #000;
+    display: inline-block;
+    margin: 0;
+    position: absolute;
+    top: 0; 
+    left: 0;
+
+}
+
+.imgNormal{
+    width: 200px;
+    height: 200px;
+    background: teal;
+    display: inline-block;
+    margin: 0;
+}
+
+    /* EL POSICIONAMIENTO ABSOLUTO SE MUEVE DESDE EL BORDE
+    SUPERIOR DEL NAVEGADOR A MENOS QUE SE LE INDIQUE A 
+    SU CONTENEDOR PADRE UN POSICIONAMIENTO RELATIVO. 
+    ESTE POSICIONAMIENTO AFECTA A LOS DEMAS ELEMENTOS */

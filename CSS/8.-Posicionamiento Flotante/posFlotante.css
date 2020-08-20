@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Consideraciones para aplicar el float 
+
+<!-- PRIMERA PARTE - ELEMENTO EN LINEA-->
+- Para que funcione las imagenes O ELEMENTOS debeN tener definidas alto y ancho.
+- AL FLOTAR LA IMAGEN O LOS DEMAS ELEMENTOS, LOS DEMAS ELEMENTOS RESPETAN SU ESPACIO,
+o sea lo que esta flotando no se coloca encima de nadie, los demas elementos se colocan en su propio
+lugar
+- LA IMAGEN FLOTA HACIA LO MAS IZQUIERDO O DERECHO DEL NAVEGADOR, ESTO SOLO SUCEDE 
+CON LAS IMAGENES DE TIPO EN LINEA., CON LAS DE BLOQUE ES DISTINTO
+*/
+
+/* .imgFlotante{
+    width: 200px;
+    height: 200px;
+    float: left;
+     margin-right: 5px; ***LINEA COMENTADA
+}
+
+.imgNormal{
+    width: 200px;
+    height: 200px;
+} */
+/* FIN PRIMERA PARTE  */
+
+/* ************************** */
+
+/* <!-- SEGUNDA PARTE - ELEMENTOS EN BLOQUE--> */
+/* - AL FLOTAR LA IMAGEN O LOS DEMAS ELEMENTOS, LOS DEMAS ELEMENTOS NOOOOO RESPETAN SU ESPACIO,
+o sea lo que flota se colocan por encima de los demas elementos.
+    - PARA LOGRAR QUE LOS ELEMENTOS EN BLOQUE FLOTEN UNO AL LADO DEL OTRO, SE LES DEBE COLOCAR LA 
+    PROPIEDAD FLOAT: LEFT, RIGHT
+    - AL COLOCAR LOS ELEMENTOS FLOTANTES, AHI SI RESPETAN LOS ESPACIOS DE CADA QUIEN, SE COLOCAN UNO AL
+    LADO DEL OTRO O ENCIMA O DEBAJO DEL  OTRO
+    - CUANDO ELEMENTOS DE TIPO BLOQUE ESTAN CONTENIDOS EN UN ELEMENTO BLOQUE PRINCIPAL: O SEA
+    VARIOS DIV DENTRO DE OTRO DIV, Y ESTE GRUPO DE DIV SE COLOCAN FLOTANTES, EL ELEMENTO PRINCIPAL
+    QUE LOS CONTIENE DESAPARECE, ESTO POR QUE TIENEN ANCHURA Y ALTURA: AUTO, no desaparecerian si este
+    elemento principal tuviera seteado un alto y un ancho. 
+    POR LO QUE SE DEBE COLOCAR LA SIGUIENTE PROPIEDAD EN EL ELEMENTO PRINCIPAL: overflow: hidden;
+*/
+
+
+.cajas2{
+    background-color:fuchsia;
+/*         width: 100%; ***LINEA COMENTADA
+        height: 500px; ***LINEA COMENTADA */
+    height: auto;
+    width: auto;
+    overflow: hidden;
+}
+
+.cajaFlotada{
+    width: 200px;
+    height: 200px;
+    background-color: greenyellow;
+    margin: 5px;
+        /* float: right; ***LINEA COMENTADA */
+    float: left;
+}
+
+.caja{
+    width: 200px;
+    height: 200px;
+    background-color: burlywood;
+    margin: 5px;
+    float: right;
+}
+
+/* ************************************************* */
+
+/* <!-- TERCERA PARTE --> */
+/* - ELEMENTO EN LINEA Y ELEMENTO EN BLOQUE 
+- SI ENTRE LOS DOS ELEMENTOS:
+    .-LE COLOCO FLOAT A UN ELEMENTO EN LINEA, EL ELEMENTO BLOQUE
+        SE COLOCARA DEBAJO DE ESTE, YA QUE ESTE NO RESPETA EL ESPACIO DE LOS DEMAS
+    .- LE COLOCO FLOAT A UN ELEMENTO EN BLOQUE, EL ELEMENTO ENLINEA
+        SE COLOCARA AL LADO DE ESTE, YA QUE ESTE SI RESPETA EL ESPACIO DE LOS DEMAS
+- ELEMENTO EN LINEA RESPETA EL ESPACIO DE LOS DEMAS ELEMENTOS,
+INDEPENDIENTEMENTE DEL TIPO QUE SEA, INLINE - BLOCK 
+*/
+
+
+/* .imgFlotante{
+    width: 200px;
+    height: 200px;
+         float: left;  ***LINEA COMENTADA
+
+}
+
+.imgNormal{
+    width: 200px;
+    height: 200px;
+}
+
+.caja{
+    width: 200px;
+    height: 200px;
+    background-color: burlywood;
+    margin: 5px;
+    float: left;
+
+} */
+
+/* *************************************************************** */
+/* <!-- CUARTA PARTE --> */
+
+/* FLOTAR ENTRE ELEMENTOS EN BLOQUE, 
+        *****cuando el ELEMENTO EN BLOQUE tienen texto adentrooo, o algun contenido******
+
+    - ENTRE ELEMENTOS EN BLOQUE DEBO COLOCAR:
+        display: inline-block;
+    - Y LUEGO COLOCAR EL FLOAT QUE DESEE
+*/
+
+/* .cajaTxtFlotada{
+    width: 400px;
+    height: 400px;
+    background-color: greenyellow;
+    display: inline-block;
+    float: right;
+}
+
+.cajaTxt{
+    width: 300px;
+    height: 300px;
+    background-color: purple;
+    display: inline-block;
+    float: left;
+} */
+
+/* TENER EN CONSIDERACION PARA LOS ELEMENTOS DE ABAJO DE LOS QUE SE HIZO EL FLOAT LO SIGUIENTE: 
+    -DEPENDIENDO DEL FLOAT DEL ELEMENTO, O SEA SI ES FLOAT LEFT, RIGHT O ETC, A LOS ELEMENTOS QUE
+    ESTAN ABAJO O LE SIGUEN A ESTE ELEMENTO FLOTADO SE DEBE COLOCAR LA PROPIEDAD  CLEAR:*/
+/* 
+    algofLOTADO{
+    float: left;
+    }
+
+    algoDebajoDelFlotado{
+    clear: both;
+    clear: right;
+    clear: left;
+    }
+} */

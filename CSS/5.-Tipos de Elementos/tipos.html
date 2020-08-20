@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de Elementos</title>
+    <link rel="stylesheet" href="tipos.css">
+</head>
+<body>
+
+    <!-- TIPOS DE Elementos
+    -inline: Respetan el flujo de los demas elementos, pero no respetan el ancho y el alto.
+    -block: Utilizan toda la linea y no respetan el flujo. 
+    -inline-block: Es una combinacion de ambos, estos si respetan el width y el height y tambien el flujo de los demas elementos
+
+
+    ELEMENTOS BLOQUES IMPORTANTES
+        -DIV
+        -H1 AL H6 
+        -TABLE 
+        -UL
+        -FORM 
+        -p
+
+    ##PARA CONVERTIR UN ELEMENTO BLOQUE EN UN ELEMENTO EN LINEA, HAY QUE CAMBIAR EL DISPLAY
+        display: inline;
+
+    ELEMENTOS EN LINEA IMPORTANTES
+        -A 
+        -IMG 
+        -INPUT 
+        -LABEL 
+        -SELECT 
+        -TEXTAREA 
+    
+    ##PARA CONVERTIR UN ELEMENTO en linea EN UN ELEMENTO BLOQUE, HAY QUE CAMBIAR EL DISPLAY
+        display: block;
+
+
+    ##  TAMBIEN ESTA EL display: inline-block; -->
+
+
+    <!-- EJEMPLOS: -->
+    <!-- -ELEMENTO BLOQUE EMPIEZA EN UNA NUEVA LINEA Y OCUPA TODO EL ESPACIO DISPONIBLE -->
+    <h1>H1 EN UN ELEMENTO BLOQUE</h1>
+
+    <!-- ELEMENTO EN LINEA, SOLO OCUPA EL ESPACIO NECESARIO, COMO HAY DOS EN LINEA SE COLOCA UNO AL LADO DEL OTRO -->
+    <a href="#">ENLACE ES UN ELEMENTO EN LINEA - AL IGUAL QUE IMAGEN</a>
+
+    <img src="rick.jpg" alt="">
+
+    <p>PARRAFO ES UN ELEMENTO EN BLOQUE</p>
+
+    <div>DIV ELEMENTO BLOQUE SE SUPONDE QUE VA EN UNA SOLA LINEA</div>
+    <div class="div2">DIV desplegado en linea</div>
+
+    <a href="#">ELEMENTO EN LINEA</a>
+
+    <a class="a2" href="#">ELEMENTO IMAGEN DESPLEGADO COMO BLOQUE, al igual que este ELEMENTO ENLACE</a>
+
+    <img class="img2" src="rick.jpg" alt="">
+
+    <br>
+    <br>
+
+    <p>LA SIGUIENTE IMAGEN RESPETA EL ANCHO Y ALTO QUE SE LE COLOCO, PORQUE ESTA EN DISPLAY: inline-block</p>
+    <img class="img3" src="rick2.jpg" alt="">
+    <img src="rick3.jpg" alt="">
+    <img src="rick5.jpg" alt="">
+    <img src="rick4.jpg" alt="">
+    <img src="rick.jpg" alt="">
+    <img src="morty.jpg" alt="">
+
+</body>
+</html>

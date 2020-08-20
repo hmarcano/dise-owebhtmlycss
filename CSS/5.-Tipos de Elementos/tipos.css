@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    width: 10000px;
+}
+
+.div2{
+    display: inline;
+}
+
+.img2, .a2{
+    display: block;
+}
+
+.img3{
+    display: inline-block;
+    width: 1200px;
+    height: 600PX;
+}

@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+.caja{
+    width: 200px;
+    height: 200px;
+    background: fuchsia;
+    background-image: url(rick.png);
+}
+
+/* PROPIEDAD TRANSFORM, Transforma elementos  */
+/* VER ESTA PAGINA PARA GUIARME:
+https://html-css-js.com/css/generator/transform/ */
+
+.caja:hover{
+    /* OPCIONES: */
+    
+    transform: scale(1.2);
+    
+    /* transform: rotate(10deg); */
+    
+    /* transform: translate(10px, 10px); */
+        /* Mueve el elemento
+        transform: translate(Horiz, Vert); */
+    
+    /* transform: skew(-200deg); */
+        /* Este ladea el elemento tipo: \ */
+    
+}
+
+/* PROPIEDAD TRANSITION, Hace transison mas suave de elementos  */
+/* VER ESTA PAGINA PARA GUIARME:
+https://www.bufa.es/css3-transitions/ */
+
+.caja1{
+    width: 200px;
+    height: 200px;
+    background: rebeccapurple;
+    background-image: url(rick2.png);
+
+    transition: all 1s ease-out; /* transition: all .2s ease; */
+        /* Valores: ease | ease-in | ease-out */
+}
+
+.caja1:hover{
+    transform: scale(1.3);
+    transform: translate(25px);
+    background-image: url(rick.png);
+}
+
+/* PROPIEDAD ANIMATION */
+/* VER ESTA PAGINA PARA GUIARME:
+*/
+@keyframes cambiarImagen{
+    0%{
+        background-image: url(rick.png);
+        transform: scale(1.1);
+    }
+    25%{
+        background-image: url(rick2.png);
+        transform: scale(1.3);
+    }
+    50%{
+        background-image: url(rick3.jpg);
+        transform: scale(1.5);
+    }
+}
+
+.caja2{
+    width: 200px;
+    height: 200px;
+
+    animation: cambiarImagen 3s infinite;
+    background-image: url(rick.png);
+}

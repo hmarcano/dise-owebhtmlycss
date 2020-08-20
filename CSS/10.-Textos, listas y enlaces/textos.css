@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* TEXTOSSSSSSSS */
+
+/* Alineamiento del texto CON LA PROPIEDAD: text-align: ;*/
+div{
+    /* text-align: ;
+        Recibe left, right, center, justify-content 
+        y define la alineacion del contenido */
+    text-align: center;
+    text-align: left;
+    text-align: justify;
+    width: 100%;
+}
+
+div.imagen{
+    text-align: center;
+}
+
+p{
+    /* PROPIEDAD line-height: ;
+        CONTROLA LA ALTURA OCUPADA POR CADA LINEA DE TEXTO (espacio entre lineas)*/
+    line-height: 32px;
+
+    /* PROPIEDAD text-decoration: ;
+        SIRVE PARA DECORAR TEXTO, Recibe: none, underline, overline, line-through 
+        SIRVE PARA LOS ENLACES, QUITARLE EL SUBRAYADO, ENTRE OTRAS COSAS*/
+    text-decoration: underline;
+    text-decoration: overline;
+    text-decoration: line-through;
+    text-decoration: none;
+
+    /* PROPIEDAD text-transform: ;
+        TRANSFORMA EL TEXTO Y RECIBE: capitalize; uppercase; lowercase; */
+    text-transform: capitalize;
+    text-transform: uppercase;
+    text-transform: lowercase;
+
+    /* PROPIEDAD font-size: ;
+        DEFINE EL TAMAÑO DEL TEXTO */
+    font-size: 38px;
+
+    /* PROPIEDAD color: ;
+        DEFINE EL COLOR DE UN textO */ 
+    color: indigo;
+
+    /* PROPIEDAD text-shadow: ;
+        DA SOMBRA A UN TEXTO RECIBE LA POSICION: horizontal, vertical, desvanecido */
+    text-shadow: 4px 2px 8px blue;
+    
+}
+
+/* LISTASSSSSSSSSSSSSSSSSS */
+    /* ESTABLECE EL TIPO DE VIÑETA MOSTRADA EN LA LISTA,
+        RECIBE: none, dic, circle, square, decimal, una imagen, etc */
+    ul{
+        padding-left: 15px;
+        list-style: disc;
+        list-style: none;
+        list-style: circle;
+        /* list-style: url('rick.png');  COLOCAR IMAGEEEEENNNNN*/
+    }
+
+    /* ENLACESSSSSSSSSSSSSSSSSSSSSSSSS */
+
+    a{
+        text-decoration: none;
+        color: red;
+    }

@@ -1,0 +1,248 @@
+/* MEDIA QUERIES
+Las consultas de medios permiten detectar características del dispositivo que está utilizando el usuario y optimizar la hoja de estilo. 
+
+576PX Dispositivos menores a 576 son celulares
+768px Dispositivos mayores a 768px pueden ser laptop
+992px Pantallas mas grandes de pc o laptops
+
+-min-width:600px o sea minimo 600px, de 600px en adelante, el min-width se configura primero para pc's
+-max-width:40px o sea maximo 40px, d 0 hasta 40px, el max-width se configura primero para celulares
+*/
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+
+    /* EL box-sizing:NOS DICE QUE LOS ELEMENTOS VAN 
+    A OCUPAR EL ESPACIO DESTINADO SIN IMPORTAR 
+    QUE TENGAN */
+    box-sizing: border-box;
+
+    font-family: 'Quicksand', sans-serif;
+}
+
+body{
+    background-color: #ffffff;
+}
+
+/* MENU  */
+nav{
+    position: fixed;
+    width: 100%;
+}
+
+nav ul{
+    text-align: center;
+    list-style: none;
+    margin-top: 25px;
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 15px;
+    transition: all .4s ease;
+}
+
+nav ul li:hover{
+    transform: scale(1.2);
+}
+
+nav ul li:hover a{
+    border-bottom: 1px solid whitesmoke;
+}
+
+nav ul li a{
+    color: silver;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+header{
+    background: linear-gradient(
+        rgba(0,0,0,.6),
+        rgba(0,0,0,.2),
+        rgba(0,0,0,.6)
+            ), url('../img/header.jpg');
+    width: 100%;
+    height: 100vh; /*ESTO SE AJUSTA AL ALTO DEL VIEWPORT*/
+    background-size: cover;
+    background-position: center;
+}
+
+/* CONTENEDOR HEADER */
+.contenedor{
+    width: 80%;
+    
+    /* OTRA FORMA DE CENTRAR ELEMENTOS */
+        /*ARRIBA Y ABAJO 0, A LOS LADOS AUTOMATICO,
+        AQUI SE HA CENTRADO EL ELEMNTO CON CLASS
+        CONTENEDOR, EL CUAL MIDE UN ANCHO DEL 80% */
+     margin: 0 auto; 
+}
+
+/* HEADER  */
+
+/* OTRA FORMA DE CENTRAR CONTENIDO  */
+.contenedor-titulo{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    /* justify-content: right; */
+    align-items: center;
+}
+
+.contenedor-titulo h1{
+    font-size: 48px;
+    color: white;
+    border: 10px double whitesmoke;
+    padding: 60px 50px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* MAIN - PRINCIPAL  */
+article{
+    padding-top: 50px;
+    text-align: center;
+    border-bottom: 5px dotted gray;
+    margin-bottom: 20px;
+}
+
+article h3{
+    font-size: 32px;
+    padding: 0 0 30px 0; /* padding-bottom: 30px; */
+}
+
+article p{
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+blockquote{
+    font-size:  18px;
+    /* font-style: italic; */
+}
+
+.tabla{
+    padding-bottom: 20px;
+}
+
+/* USO DEL min-width  */
+@media (min-width: 892px){
+    div.cont-tabla{
+        width: 50%;
+        float: left;
+        display: inline-block;
+    }
+}
+
+.cont-tabla{
+    width: 100%;
+}
+
+/* USO DEL max-width  */
+/* div.cont-tabla{
+    width: 50%;
+    float: left;
+    display: inline-block;
+}
+
+@media (max-width: 892px){
+    .cont-tabla{
+        width: 100%!important;
+    }
+} */
+
+div.cont-tabla table{
+    width: 100%;
+    text-align: center;
+}
+
+div.cont-tabla table td{
+    padding: 40px 20px;
+}
+
+
+
+/* USO DEL min-width  */
+@media (min-width: 892px){
+    div.img-tabla{
+        width: 50%;
+        display: inline-block;
+        height: 300px;
+        overflow: hidden;
+    }
+}
+
+.img-tabla{
+    width: 100%;
+}
+
+/* USO DEL max-width  */
+/* 
+div.img-tabla{
+    width: 50%;
+    display: inline-block;
+    height: 300px;
+    overflow: hidden;
+}
+
+@media (max-width: 892px){
+    .img-tabla{
+        width: 100%!important;
+    }
+} */
+
+div.img-tabla img{
+    width: 100%;
+}
+
+/* SECCION LLAMADA */
+.llamada{
+    background: url('../img/llamada.jpg');
+    width: 100%;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 50px 0;
+}
+
+div.llamada-texto{
+    text-align: center;
+}
+
+div.llamada-texto h3{
+    font-size: 32px;
+    color: whitesmoke;
+    padding-top: 50px;
+}
+
+div.llamada-texto button{
+    padding: 10px 20px;
+    margin-top: 20px;
+    /* border: 1px solid #000; */
+    border: none;
+    background: #ffa630;
+    color: whitesmoke;
+    font-size: 18px;
+    border-radius: 2px;
+    transition: all .3s ease;
+}
+
+button:hover{
+    transform: scale(1.2);
+}
+
+/* FOOTER  */
+footer{
+    height: 50px;
+    background: #152537;
+    text-align: center;
+    padding-top: 15px;
+}
+
+footer p{
+    color: whitesmoke;
+}

@@ -1,0 +1,38 @@
+*{
+	font-size:64px;
+}
+
+/*Los colores pueden recibir hexadecimales #f40000
+	palabras red, o rgba(244,0,0,1); */
+
+/* 1em sería equivalente a la medida en pixeles
+que definí en el font-size de arriba
+	Ejemplo: 1em: 16px
+			 2em: 32px; */
+.caja1{
+	background:#9cafb7;
+	width: 32px;
+	height: 32px;
+	margin: 20px;
+}
+
+.caja2{
+	background: rgba(0,0,0,1);
+	width: 4em;
+	height: 2em;
+	margin: 20px;
+}
+
+/*Porcentajes*/
+
+.caja3{
+	background: red;
+	width: 50%;
+	height: 50%;
+}
+
+/* Colores en palabras
+
+aqua, black, blue, fuchsia, gray, green, lime,
+ maroon, navy, olive, orange, purple, red, silver,
+  teal, white, yellow */
